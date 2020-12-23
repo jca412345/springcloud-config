@@ -1,18 +1,2 @@
-server:
-  port: 3344
-spring:
-  application:
-    name: cloud-config-center
-  cloud:
-    config:
-      server:
-        git:
-          uri: git@github.com:jca412345/springcloud-config.git
-          search-paths:
-            - springcloud-config
-      label: master
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:7001/eureka
+config:
+  info: "master branch,springcloud-config/config-dev.yml version=3355-test"
